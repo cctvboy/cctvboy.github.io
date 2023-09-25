@@ -4,7 +4,7 @@
   <url>
     <loc>http://cctvboy.github.io/manifest.json</loc>
     
-    <lastmod>2023-09-20</lastmod>
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>http://cctvboy.github.io/posts/3eeb.html</loc>
     
-    <lastmod>2023-09-20</lastmod>
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,79 @@
   <url>
     <loc>http://cctvboy.github.io/posts/e0b8.html</loc>
     
-    <lastmod>2023-09-20</lastmod>
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/f89a.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/5475.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/9dcf.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/9b0f.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/f8ce.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/f2ce.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/d04e.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/posts/66c7.html</loc>
+    
+    <lastmod>2023-09-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +103,7 @@
 
   <url>
     <loc>http://cctvboy.github.io/</loc>
-    <lastmod>2023-09-20</lastmod>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,7 +111,14 @@
   
   <url>
     <loc>http://cctvboy.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-09-20</lastmod>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://cctvboy.github.io/tags/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
