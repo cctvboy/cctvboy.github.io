@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://cctvboy.github.io/posts/f89a.html</loc>
+    <loc>http://cctvboy.github.io/posts/5475.html</loc>
     
     <lastmod>2023-09-25</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://cctvboy.github.io/posts/5475.html</loc>
+    <loc>http://cctvboy.github.io/posts/f89a.html</loc>
     
     <lastmod>2023-09-25</lastmod>
     
@@ -117,12 +117,19 @@
   </url>
   
   <url>
-    <loc>http://cctvboy.github.io/tags/%E5%88%86%E4%BA%AB/</loc>
+    <loc>http://cctvboy.github.io/tags/%E5%A3%81%E7%BA%B8/</loc>
     <lastmod>2023-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
+  
+  <url>
+    <loc>http://cctvboy.github.io/categories/%E5%A3%81%E7%BA%B8%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2023-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
