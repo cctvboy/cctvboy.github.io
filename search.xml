@@ -202,6 +202,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/photo.css"/>
+      <url>/css/photo.css</url>
+      
+        <content type="html"><![CDATA[.photo-box {    background: url(https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp) no-repeat;    /* 使用cover来完全覆盖容器 */    background-size: cover;}.photo-title {    font-size: 1.8em;    font-weight: 500;    letter-spacing: 4px;    color: #fff;    user-select: none;    margin-top: 40px;    margin-bottom: 30px;    text-align: center;}/* 网格布局 */.gallery {    display: grid;    grid-template-columns: repeat(3, 1fr);    grid-gap: 12px;}.gallery .img-box {    position: relative;}.gallery img {    background-color: #fff;    width: 260px;    margin: 32px 2px;    padding: 8px;    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);    object-fit: cover;    /* 滤镜 */    filter: grayscale(100%) contrast(1.2);    transition: all .5s ease-in-out;}.img-box img:nth-child(2) {    position: absolute;    left: 0;    top: 0;    z-index: 1;    box-shadow: none;    opacity: 0;    filter: none;    cursor: pointer;}.img-box:hover img:nth-child(1) {    filter: none;}/* 第偶数个img-box旋转 -5deg */.gallery .img-box:nth-child(even) img {    transform: rotate(-5deg);}/* 第奇数个img-box旋转 7deg */.gallery .img-box:nth-child(odd) img {    transform: rotate(7deg);}/* overview-show 图片显示时需要添加的样式 */.img-box .overview-img.overview-show {    opacity: 1;    z-index: 2;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/progress_bar.css"/>
       <url>/css/progress_bar.css</url>
       
@@ -294,6 +305,17 @@
       <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>photo</title>
+      <link href="/photo/index.html"/>
+      <url>/photo/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="photo-box"><div class="photo-title">一张照片，一段回忆，一个故事</div>    <div class="gallery">        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/7.1t92lvon8ny8.webp" alt="1.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="2.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="3.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="6.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="6.jpg">        </div>    </div></div>]]></content>
       
     </entry>
     
