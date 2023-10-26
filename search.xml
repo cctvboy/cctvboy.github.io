@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>学习路上的畔脚石</title>
+      <link href="/posts/e0b8.html"/>
+      <url>/posts/e0b8.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="解决-fatal-unable-to-access-‘httpsgithub-comxxxxxxxxxxx-git’-Recv-failure-Connection-was-reset-报错"><a href="#解决-fatal-unable-to-access-‘httpsgithub-comxxxxxxxxxxx-git’-Recv-failure-Connection-was-reset-报错" class="headerlink" title="解决 fatal unable to access ‘httpsgithub.comxxxxxxxxxxx.git’ Recv failure Connection was reset 报错"></a>解决 fatal unable to access ‘httpsgithub.comxxxxxxxxxxx.git’ Recv failure Connection was reset 报错</h2><p>这个报错是当你设置了代理或者开了翻墙时自动配置代理时的错误，有两种解决办法；</p><p><strong>第一种：</strong></p><p>1.查看自己的代理地址的端口，打开网络设置—代理就能查看到</p><p>2.输入以下命令配置 Git 全局代理，xxx 输入端口号，配置之后就可以克隆远程仓库了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy http://127.0.0.1:xxx</span><br></pre></td></tr></table></figure><p><strong>第二种：</strong></p><p>全局不设置 http 和 https 代理，执行一下命令即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/posts/3eeb.html"/>
       <url>/posts/3eeb.html</url>
@@ -42,17 +67,17 @@
     
     
     <entry>
-      <title>快速搭建博客</title>
-      <link href="/posts/f89a.html"/>
-      <url>/posts/f89a.html</url>
+      <title>git命令操作</title>
+      <link href="/posts/f8ce.html"/>
+      <url>/posts/f8ce.html</url>
       
-        <content type="html"><![CDATA[<p>运行命令hexo clean（清除生成文件），hexo g（生成网页）， hexo s（本地预览），hexo d（部署）</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20231026/git.27nokd5kzytc.webp" alt=""></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">git init                                                  # 初始化本地git仓库（创建新仓库）</span><br><span class="line">git config --global user.name &quot;xxx&quot;                       # 配置用户名</span><br><span class="line">git config --global user.email &quot;xxx@xxx.com&quot;              # 配置邮件</span><br><span class="line">git config --global color.ui true                         # git status等命令自动着色</span><br><span class="line">git config --global color.status auto</span><br><span class="line">git config --global color.diff auto</span><br><span class="line">git config --global color.branch auto</span><br><span class="line">git config --global color.interactive auto</span><br><span class="line">git config --global --unset http.proxy                    # remove  proxy configuration on git</span><br><span class="line">git clone git+ssh://git@192.168.53.168/VT.git             # clone远程仓库</span><br><span class="line">git status                                                # 查看当前版本状态（是否修改）</span><br><span class="line">git add xyz                                               # 添加xyz文件至index</span><br><span class="line">git add .                                                 # 增加当前子目录下所有更改过的文件至index</span><br><span class="line">git commit -m &#x27;xxx&#x27;                                       # 提交</span><br><span class="line">git commit --amend -m &#x27;xxx&#x27;                               # 合并上一次提交（用于反复修改）</span><br><span class="line">git commit -am &#x27;xxx&#x27;                                      # 将add和commit合为一步</span><br><span class="line">git rm xxx                                                # 删除index中的文件</span><br><span class="line">git rm -r *                                               # 递归删除</span><br><span class="line">git log                                                   # 显示提交日志</span><br><span class="line">git log -1                                                # 显示1行日志 -n为n行</span><br><span class="line">git log -5</span><br><span class="line">git log --stat                                            # 显示提交日志及相关变动文件</span><br><span class="line">git log -p -m</span><br><span class="line">git show dfb02e6e4f2f7b573337763e5c0013802e392818         # 显示某个提交的详细内容</span><br><span class="line">git show dfb02                                            # 可只用commitid的前几位</span><br><span class="line">git show HEAD                                             # 显示HEAD提交日志</span><br><span class="line">git show HEAD^                                            # 显示HEAD的父（上一个版本）的提交日志 ^^为上两个版本 ^5为上5个版本</span><br><span class="line">git push origin master                                    # 将当前分支push到远程master分支</span><br><span class="line">git push origin :hotfixes/BJVEP933                        # 删除远程仓库的hotfixes/BJVEP933分支</span><br><span class="line">git push --tags                                           # 把所有tag推送到远程仓库</span><br><span class="line">git pull origin master                                    # 获取远程分支master并merge到当前分支</span><br><span class="line">git mv README README2                                     # 重命名文件README为README2</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
       
       
         <tags>
             
-            <tag> 博客 </tag>
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -321,7 +346,7 @@
       <link href="/photo/index.html"/>
       <url>/photo/index.html</url>
       
-        <content type="html"><![CDATA[<div class="photo-box"><div class="photo-title">一张照片，一段回忆，一个故事</div>    <div class="gallery">        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/7.1t92lvon8ny8.webp" alt="1.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="2.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="3.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="6.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="https://cdn.statically.io/gh/cctvboy/pic-bed@master/20230928/bg1.6yo8qimwjsc0.webp" alt="6.jpg">        </div>    </div></div>]]></content>
+        <content type="html"><![CDATA[<div class="photo-box"><div class="photo-title">一张照片，一段回忆，一个故事</div>    <div class="gallery">        <div class="img-box">            <img class="overview-img" src="../img/live/8.jpg" alt="2.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/7.jpg" alt="2.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/6.jpg" alt="3.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/5.jpg"" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/4.jpg" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/3.jpg" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/2.jpg" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/1.jpg" alt="6.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/9.jpg" alt="6.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/10.jpg" alt="4.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/11.jpg" alt="5.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/12.jpg" alt="6.jpg">        </div>        <div class="img-box">            <img class="overview-img" src="../img/live/13.jpg" alt="6.jpg">        </div>    </div></div>]]></content>
       
     </entry>
     
